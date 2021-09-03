@@ -1,0 +1,170 @@
+header {
+        display: block;
+        weight: 100%; 
+        margin-top: 15px;}
+ 
+header span 
+{position: absolute;
+Color : #173A56;
+font-size: 30px;
+font-weight: bold;
+font-family: arial black;
+-webkit-text-stroke: 1px black;
+margin-top: 15px;
+margin-left: 5px;
+}
+
+svg.pic1 {position: left;
+width: 32px;
+height: 30px;
+left: 143px;
+top: 22px;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+margin-left: 143px;
+margin-top: 20px;}
+
+header section {display: inline-block;
+width: 650px;
+float: right;
+margin-top: 15px;
+margin-right: 10px;
+word-spacing: 1.5em;    
+font-size: 14px;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+header section a {text-decoration: none;
+color: black;}
+header section div {display: inline-block;
+    margin-right: 50px;
+    margin-left: 20px;
+   }
+header section div button.signin{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    height: 40px;
+    width: 100px;
+    color: #173A56;
+    background-color: white;
+    border: 1px solid #BCD0E5;
+    top: 15px;
+    border-radius: 5px;
+}
+
+header section div button.signup{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    height: 40px;
+    width: 100px;
+    color: #ffffff;
+    background-color: #FF9900;
+    border: 1px solid #e06331;
+    top: 15px;
+    border-radius: 5px;
+}
+
+header section div button.signin:hover {background-color: #75aec8}
+header section div button.signin:active {
+    background-color: #75aec8;
+    transform: translateY(1px);
+}
+
+header section div button.signup:hover {background-color: #e06331
+}
+
+header section div button.signup:active {
+    background-color: #e06331;
+    transform: translateY(1px);
+}
+   
+     main section.main1 div p.section1 
+       {font-family: Arial black;
+        color: rgba(47, 40, 30, 1);
+        font-size: 44px;
+        position: absolute;
+        width: 518px;
+        height: 108px;
+        left: 144px;
+        top: 160px;
+        line-height: 54px;
+       }
+        main section svg
+      {position: absolute;
+        width: 605px;
+        height: 496px;
+        left: 666px;
+        top: 128px;} 
+    
+    main section.main1 div p.section1a{
+        position: absolute;
+        width: 458px;
+        height: 95px;
+        left: 145px;
+        top: 349px;
+
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 28px;
+        color: #544837;
+    }
+
+    main section.main1 div button.Getstarted{
+        position: absolute;
+        width: 175px;
+        height: 53px;
+        left: 145px;
+        top: 489px;
+        background-color: FF9900;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        border-radius: 5px;
+        border: 1px solid #e06331;
+    }
+
+    main section.main1 div button.Getstarted:hover {background-color: #e06331
+    }
+    
+    main section.main1 div button.Getstarted:active {
+        background-color: #e06331;
+        transform: translateY(1px);
+    }
+
+    main section.main1 div button.wtv{
+        position: absolute;
+        height: 24px;
+        left: 400px;
+        right: 0%;
+        top: 502px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration-line: underline;
+        color: #FF9900;
+        outline: none;
+        border: 0;
+        background: transparent;
+}
+
+.button.play {
+  border-style: solid;
+  background-color: transparent;
+  width: 9px;
+  height: 9px;
+  border-width: 9px 0px 9px 20px;
+  border-color: transparent transparent transparent #FF9900;
+  position: absolute;
+  left: 370px;
+  top: 505px;
+}
+main section.main1 div button.wtv a 
+{ color: #FF9900;}
