@@ -1,7 +1,7 @@
 header {
-        display: block;
-        weight: 100%; 
-        margin-top: 15px;}
+ display: block;
+ width: 100%;
+ margin-top: 15px;}
  
 header span 
 {position: absolute;
@@ -14,7 +14,8 @@ margin-top: 15px;
 margin-left: 5px;
 }
 
-svg.pic1 {position: left;
+svg.pic1 {
+position: left;
 width: 32px;
 height: 30px;
 left: 143px;
@@ -23,19 +24,23 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 margin-left: 143px;
 margin-top: 20px;}
 
-header section {display: inline-block;
+header section {
+display: inline;
 width: 650px;
-float: right;
+float:right;
 margin-top: 15px;
 margin-right: 10px;
 word-spacing: 1.5em;    
 font-size: 14px;
 font-family: Arial, Helvetica, sans-serif;
-
 }
-header section a {text-decoration: none;
+
+header section a {
+text-decoration: none;
 color: black;}
-header section div {display: inline-block;
+
+header section div {
+    display: inline-block;
     margin-right: 50px;
     margin-left: 20px;
    }
@@ -65,20 +70,27 @@ header section div button.signup{
     border-radius: 5px;
 }
 
-header section div button.signin:hover {background-color: #75aec8}
+header section div button.signin:hover {
+    background-color: #75aec8}
 header section div button.signin:active {
     background-color: #75aec8;
     transform: translateY(1px);
 }
 
-header section div button.signup:hover {background-color: #e06331
+header section div button.signup:hover {
+    background-color: #e06331
 }
 
 header section div button.signup:active {
     background-color: #e06331;
     transform: translateY(1px);
 }
-   
+main section {
+    display: block;
+    width: 100%;
+    height: 100%;
+    }
+
      main section.main1 div p.section1 
        {font-family: Arial black;
         color: rgba(47, 40, 30, 1);
@@ -86,7 +98,7 @@ header section div button.signup:active {
         position: absolute;
         width: 518px;
         height: 108px;
-        left: 144px;
+        left: 10%;
         top: 160px;
         line-height: 54px;
        }
@@ -103,7 +115,6 @@ header section div button.signup:active {
         height: 95px;
         left: 145px;
         top: 349px;
-
         font-family: Poppins;
         font-style: normal;
         font-weight: normal;
@@ -129,7 +140,8 @@ header section div button.signup:active {
         border: 1px solid #e06331;
     }
 
-    main section.main1 div button.Getstarted:hover {background-color: #e06331
+    main section.main1 div button.Getstarted:hover {
+        background-color: #e06331
     }
     
     main section.main1 div button.Getstarted:active {
@@ -141,11 +153,11 @@ header section div button.signup:active {
         position: absolute;
         height: 24px;
         left: 400px;
-        right: 0%;
+        right: 0;
         top: 502px;
         font-family: Poppins;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 600px;
         font-size: 16px;
         line-height: 24px;
         text-decoration-line: underline;
@@ -166,5 +178,131 @@ header section div button.signup:active {
   left: 370px;
   top: 505px;
 }
-main section.main1 div button.wtv a 
-{ color: #FF9900;}
+main section.main1 div button.wtv a {
+ color: #FF9900;}
+
+ main section.main2 div p.section2{
+    font-family: Arial black;
+    color: rgba(47, 40, 30, 1);
+    font-size: 44px;
+    position: absolute;
+    text-align: center;
+    width: 50%;
+    height: 157px;
+    left: 25%;
+    right: 25%;
+    top: 89%;
+    line-height: 54px;}
+
+   
+    main section.main2 div svg.pic3 {
+       display: inline;
+        position: absolute;
+        width: 10%;
+        height: 10%;
+        left: 10.58%;
+        top: 123.83%;}
+       
+        main section.main2 h1 {
+            display: inline;
+            position: absolute;
+            left: 10%;;
+            top: 135.83%;
+        }
+        main section.main2 h1 + p {
+            display: inline;
+            position: absolute;
+            font-size: 18;
+            left: 10%;;
+            top: 142.83%;
+            line-height: 1.5;
+        }
+        main section.main2 div.block2 svg.pic4 {
+            display: inline;
+             position: absolute;
+             width: 10%;
+             height: 10%;
+             left: 30.58%;
+             top: 123.83%;}
+
+             main section.main2 div.block2 h1 {
+                display: inline;
+                position: absolute;
+                left: 30%;
+                top: 135.83%;
+            }
+            main section.main2 div.block2 h1 + p {
+                display: inline;
+                position: absolute;
+                left: 30%;
+                top: 142.83%;
+                line-height: 1.5;
+            }
+            main section.main2 div.block3 svg.pic5 {
+                display: inline;
+                 position: absolute;
+                 font-size: 18;
+                 width: 10%;
+                 height: 10%;
+                 left: 50.58%;
+                 top: 123.83%;}
+    
+                 main section.main2 div.block3 h1 {
+                    display: inline;
+                    position: absolute;
+                    left: 50%;
+                    top: 135.83%;
+                }
+                main section.main2 div.block3 h1 + p {
+                    display: inline;
+                    position: absolute;
+                    font-size: 18;
+                    left: 50%;
+                    top: 142.83%;
+                    line-height: 1.5;
+                }
+                main section.main2 div.block4 svg.pic6 {
+                    display: inline;
+                     position: absolute;
+                     width: 10%;
+                     height: 10%;
+                     left: 70.58%;
+                     top: 123.83%;}
+        
+                     main section.main2 div.block4 h1 {
+                        display: inline;
+                        position: absolute;
+                        left: 70%;
+                        top: 135.83%;
+                    }
+                    main section.main2 div.block4 h1 + p {
+                        display: inline;
+                        position: absolute;
+                        font-size: 18;
+                        left: 70%;
+                        top: 142.83%;
+                        line-height: 1.5;
+                    }
+     main section.main2 div button.SignUpNow { 
+        position: absolute;
+        left: 40%;
+        right: 50%;
+        top: 160%;
+        width: 17%;
+        height: 9%;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        color: #FFFFFF;
+        background-color: #FF9900;
+        border-radius: 5px;
+        border: 1px solid #e06331;
+}
+main section.main2 div button.SignUpNow:hover {
+    background-color: #e06331
+}
+
+main section.main2 div button.SignUpNow:active{
+    background-color: #e06331;
+    transform: translateY(1px);
+}
