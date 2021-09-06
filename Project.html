@@ -1,4 +1,11 @@
-<DOCTYPE html>
+<DOCTYPE html> <!-- DOCTYPE - Неправильная запись, пропустил восклецательный знак перед ключевым словом -->
+<!-- ето можно оценивать как критическим багом потому что ...
+ Если не исправлять - браузер строит неправильное дом-дерево. Хоть визуально все нормально.
+ А если исправить - стили ломаются.
+ Такой баг - повлиеет на работу команды.
+
+ Дальше я буду проверять - неисправляя баг.
+ -->
     <html lang="en">
 
     <head>
@@ -7,11 +14,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Project</title>
         <link rel="stylesheet" href="style.css">
+        <!-- Для началоа нормально но используй относительные ссылки
+            @Info http://htmlbook.ru/samhtml/ssylki/absolyutnye-i-otnositelnye-ssylki
+        -->
     </head>
 
     <body>
         <header>
+            <!--  контент хедера выходит за родительски блок -->
             <a href="/" title="Main page">
+                 <!-- ссылку растянуло - можно нажать в пустом месте и попасть в ссылки  -->
                 <svg class="pic1" width="32" height="30" viewBox="0 0 32 30" fill="none"
                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <rect x="0.924316" width="30.1622" height="30" rx="7" fill="#D8D8D8" />
@@ -31,7 +43,7 @@
                 </svg>
                 <span>Productly</span>
             </a>
-            <section>
+            <section> <!-- название тега некоректное (Семантический не правильно) - поскольку ето меню/навигация то и тег должен быть соответствующий -->
                 <a href="Product">Product</a>
                 <a href="Custumers">Custumers</a>
                 <a href="Pricng">Pricng</a>
