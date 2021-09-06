@@ -2,8 +2,9 @@ header {
  display: block;
  width: 100%;
  margin-top: 15px;}
- 
-header span 
+
+/* нет выравнивание кода - усложняет чтение и поиск */
+header span
 {position: absolute;
 Color : #173A56;
 font-size: 30px;
@@ -14,14 +15,19 @@ margin-top: 15px;
 margin-left: 5px;
 }
 
-svg.pic1 {
+svg.pic1 { /*.pic1 - название класса неочем не говорит - что ето за картинка или для чего она предназначина.
+ Как тестовые названия ето норм - но не как в проекте
+ */
+    /*  старт. стили ниже просто безполезны, и неначто не влияют
+    чтобы ето проверить, открой консоль разработчика в браузере и просто попробуй/включить выключить стиль*/
 position: left;
 width: 32px;
 height: 30px;
 left: 143px;
 top: 22px;
+    /*  конец */
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-margin-left: 143px;
+margin-left: 143px; /* вот причина неправельной ссылки - етот оступ нужно было делать на обший блок, но не изображение */
 margin-top: 20px;}
 
 header section {
@@ -30,7 +36,7 @@ width: 650px;
 float:right;
 margin-top: 15px;
 margin-right: 10px;
-word-spacing: 1.5em;    
+word-spacing: 1.5em;
 font-size: 14px;
 font-family: Arial, Helvetica, sans-serif;
 }
@@ -91,7 +97,13 @@ main section {
     height: 100%;
     }
 
-     main section.main1 div p.section1 
+ /* Использование  "position:absolute" - в данном шаблоне - ошибочно
+ 1) Если внимательно прочитать описание http://htmlbook.ru/css/position то можно заметить проблему с етим стилем.
+ 2) Постоянное использование етого стиля приведет к невозможности дальнейшей потдержки проекта. Тоесть проше будет удалить все и переписать.
+ 3) Адаптивность - Елементы абсолютно позиционированы - неподерживаются адаптивностью. Ониигнорируют любые изменения блоков на странице.
+ Если такую верстку увидят - Тебя уволят )) Поетому давай над етим работать вместе и пиши мне чаще.
+*/
+     main section.main1 div p.section1
        {font-family: Arial black;
         color: rgba(47, 40, 30, 1);
         font-size: 44px;
@@ -107,8 +119,8 @@ main section {
         width: 605px;
         height: 496px;
         left: 666px;
-        top: 128px;} 
-    
+        top: 128px;}
+
     main section.main1 div p.section1a{
         position: absolute;
         width: 458px;
@@ -129,7 +141,7 @@ main section {
         height: 53px;
         left: 145px;
         top: 489px;
-        background-color: FF9900;
+        background-color: FF9900; /*Забыла вначале поставить символ цветовой схемы*/
         font-family: Poppins;
         font-style: normal;
         font-weight: bold;
@@ -143,7 +155,7 @@ main section {
     main section.main1 div button.Getstarted:hover {
         background-color: #e06331
     }
-    
+
     main section.main1 div button.Getstarted:active {
         background-color: #e06331;
         transform: translateY(1px);
@@ -157,7 +169,7 @@ main section {
         top: 502px;
         font-family: Poppins;
         font-style: normal;
-        font-weight: 600px;
+        font-weight: 600px; /*еденици измерения тут не нужны*/
         font-size: 16px;
         line-height: 24px;
         text-decoration-line: underline;
@@ -167,7 +179,23 @@ main section {
         background: transparent;
 }
 
-.button.play {
+/*
+Ты смогла сделать стрелочку ето прекрасно но тут 3 ошибки ))
+1) название класса
+ - в дальнейшем ето будет тебя путать
+2) использовала ХТМЛ-тег кнопки
+ - button - семантический неподходит для кмртинок
+ - button - есть свои дефолтные стили и у разных браузеров разные стили
+ - И я понимаю почему ты решила выбрать етот тег для стрелочки. Стрелка - ведь кнопка )) И ето тебя збило
+ Но Стрелочка - только изображение/иконка
+ А текст - ето только название для кнопки/button
+ а их сочетание (иконка и название) - дает полноценную кнопку
+
+3) Стелочка - структурно в ХТМЛ отделена от ее названия
+ - Нужно было ету стрелку положить в .Wtv - ето былобы мение критично
+ - А вообще идеально было - использовать псевдо-елемент :before или :after - и положить его в а-тег
+*/
+.button.play { /* название класса смежное с названием ХТМЛ-тега*/
   border-style: solid;
   background-color: transparent;
   width: 9px;
@@ -194,7 +222,7 @@ main section.main1 div button.wtv a {
     top: 89%;
     line-height: 54px;}
 
-   
+
     main section.main2 div svg.pic3 {
        display: inline;
         position: absolute;
@@ -202,7 +230,7 @@ main section.main1 div button.wtv a {
         height: 10%;
         left: 10.58%;
         top: 123.83%;}
-       
+
         main section.main2 h1 {
             display: inline;
             position: absolute;
@@ -212,7 +240,7 @@ main section.main1 div button.wtv a {
         main section.main2 h1 + p {
             display: inline;
             position: absolute;
-            font-size: 18;
+            font-size: 18; /*Забыла поставить еденици измерения*/
             left: 10%;;
             top: 142.83%;
             line-height: 1.5;
@@ -246,7 +274,7 @@ main section.main1 div button.wtv a {
                  height: 10%;
                  left: 50.58%;
                  top: 123.83%;}
-    
+
                  main section.main2 div.block3 h1 {
                     display: inline;
                     position: absolute;
@@ -268,7 +296,7 @@ main section.main1 div button.wtv a {
                      height: 10%;
                      left: 70.58%;
                      top: 123.83%;}
-        
+
                      main section.main2 div.block4 h1 {
                         display: inline;
                         position: absolute;
@@ -283,7 +311,7 @@ main section.main1 div button.wtv a {
                         top: 142.83%;
                         line-height: 1.5;
                     }
-     main section.main2 div button.SignUpNow { 
+     main section.main2 div button.SignUpNow {
         position: absolute;
         left: 40%;
         right: 50%;
